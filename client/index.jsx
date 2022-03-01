@@ -2,7 +2,7 @@ import * as ReactDOM from "react-dom";
 import * as React from "react";
 import {useState} from "react";
 
-import {isCorrectAnswer, randomQuestion} from "./questions";
+import {isCorrectAnswer, randomQuestion} from "../server/questions";
 
 function ShowQuestion({question, onAnswer}) {
     return <>
