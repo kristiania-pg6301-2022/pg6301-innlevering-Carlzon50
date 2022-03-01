@@ -4,7 +4,10 @@
   "description": "quiz",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html",
+    "start": "cd server && npm start",
+    "dev": "concurrently npm:dev:server npm:dev:client",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
     "test": "jest"
   },
   "repository": {
@@ -18,6 +21,7 @@
   },
   "homepage": "https://github.com/kristiania-pg6301-2022/pg6301-innlevering-Carlzon50#readme",
   "devDependencies": {
+    "concurrently": "^7.0.0",
     "parcel": "^2.2.1"
   },
   "dependencies": {
