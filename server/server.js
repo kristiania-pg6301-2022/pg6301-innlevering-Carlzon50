@@ -4,9 +4,8 @@ import * as path from "path";
 
 const app = express();
 
-app.get("/question/random", (req, res) => {
-    const question = randomQuestion();
-    res.json(question);
+app.get("/login", (req, res, next) => {
+    res.json({ username: "Sup man!" });
 });
 
 app.use(express.static(path.resolve("../client/dist")));
