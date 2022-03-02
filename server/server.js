@@ -9,7 +9,10 @@ app.get("/question/random", (req, res) => {
     res.json(question);
 });
 
-app.post("/question", ())
+app.post("/question", (req, res) => {
+    console.log("Test")
+    res.end()
+});
 
 app.use(express.static(path.resolve("../client/dist")));
 app.use((req, res, next) => {
