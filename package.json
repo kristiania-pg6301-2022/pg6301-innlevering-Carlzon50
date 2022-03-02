@@ -1,7 +1,7 @@
 {
   "name": "quiz.innlevering",
   "version": "1.0.0",
-  "description": "quiz",
+  "description": "quizzzz",
   "main": "index.js",
   "scripts": {
     "start": "cd server && npm start",
