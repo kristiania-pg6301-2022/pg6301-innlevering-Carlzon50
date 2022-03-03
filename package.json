@@ -8,7 +8,10 @@
     "dev": "concurrently npm:dev:server npm:dev:client",
     "dev:client": "cd client && npm run dev",
     "dev:server": "cd server && npm run dev",
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier --write **/*.{js,jsx}",
+    "format:check": "prettier --check **/*.{js,jsx}",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -22,7 +25,9 @@
   "homepage": "https://github.com/kristiania-pg6301-2022/pg6301-innlevering-Carlzon50#readme",
   "devDependencies": {
     "concurrently": "^7.0.0",
-    "parcel": "^2.2.1"
+    "husky": "^7.0.4",
+    "parcel": "^2.2.1",
+    "prettier": "2.5.1"
   },
   "dependencies": {
     "react": "^17.0.2",
