@@ -73,7 +73,6 @@ function Quiz() {
   );
 }
 
-
 function App() {
   return (
     <BrowserRouter>
