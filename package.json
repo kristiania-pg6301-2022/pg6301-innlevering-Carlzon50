@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "cd server && npm start",
-    "build": "cd server && npm install",
+    "build": "npm run build:server && npm run build:client",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
     "dev": "concurrently npm:dev:server npm:dev:client",
     "dev:client": "cd client && npm run dev",
     "dev:server": "cd server && npm run dev",
@@ -32,7 +34,8 @@
   },
   "dependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.2"
   },
   "keywords": []
 }
