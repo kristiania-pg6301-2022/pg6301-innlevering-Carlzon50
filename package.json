@@ -1,41 +1,27 @@
 {
-  "name": "quiz.innlevering",
+  "name": "quizzzz",
   "version": "1.0.0",
-  "description": "quizzzz",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "cd server && npm start",
+    "dev": "concurrently npm:dev:client npm:dev:server",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "format": "prettier --write **/*.{js,jsx}",
+    "format:check": "prettier --check **/*.{js,jsx}",
     "build": "npm run build:server && npm run build:client",
     "build:client": "cd client && npm run build",
     "build:server": "cd server && npm run build",
-    "dev": "concurrently npm:dev:server npm:dev:client",
-    "dev:client": "cd client && npm run dev",
-    "dev:server": "cd server && npm run dev",
-    "test": "jest",
-    "format:check": "prettier --check \"**/*.{js,jsx}\"",
-    "format": "prettier --write \"**/*.{js,jsx}\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kristiania-pg6301-2022/pg6301-innlevering-Carlzon50.git"
-  },
-  "author": "Gardos & Adamos",
+  "keywords": [],
+  "author": "Gard & Adam",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kristiania-pg6301-2022/pg6301-innlevering-Carlzon50/issues"
-  },
-  "homepage": "https://github.com/kristiania-pg6301-2022/pg6301-innlevering-Carlzon50#readme",
   "devDependencies": {
     "concurrently": "^7.0.0",
     "husky": "^7.0.4",
-    "parcel": "^2.2.1",
-    "prettier": "2.5.1"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^6.2.2"
-  },
-  "keywords": []
+    "prettier": "^2.5.1"
+  }
 }

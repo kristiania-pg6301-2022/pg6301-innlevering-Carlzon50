@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`quiz application Shows frontpage header is right 1`] = `"<div><h1>Quiz App</h1><ul><li><a href=\\"/question\\">Start Your Quiz</a></li></ul></div>"`;
