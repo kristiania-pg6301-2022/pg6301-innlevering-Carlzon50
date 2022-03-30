@@ -1,0 +1,7 @@
+POST {{server}}/answer
+Content-Type: application/json
+
+{
+  "username": "Sup man!",
+  "password": "secret"
+}
